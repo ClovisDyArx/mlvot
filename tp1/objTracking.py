@@ -1,3 +1,4 @@
+from time import sleep
 from KalmanFilter import KalmanFilter
 from Detector import detect
 import cv2
@@ -9,6 +10,7 @@ if __name__ == "__main__":
     cap = cv2.VideoCapture('randomball.avi')
 
     while True:
+        sleep(0.1)  # slow down the video to visualize the tracking better...
         ret, frame = cap.read()
         if not ret:
             break
