@@ -182,7 +182,7 @@ def main():
 
     # Generate and save video
     frames_with_tracks = generate_frames(all_tracked_bboxs)
-    save_video(frames_with_tracks, "output.avi", fps=30, frame_size=(1920, 1080))
+    save_video(frames_with_tracks, "output_tp3.avi", fps=30, frame_size=(1920, 1080))
 
     # Save tracking results
     save_tracking_results(all_tracked_bboxs)

@@ -239,7 +239,7 @@ def main_loop_full(path_det):
     all_tracked_bboxs = get_all_tracked_bboxs(df_det_s)
 
     frames = generate_frames(all_tracked_bboxs)
-    save_video(frames, 'output.avi', fps=30, frame_size=(1920, 1080))
+    save_video(frames, 'output_tp2.avi', fps=30, frame_size=(1920, 1080))
 
     save_tracking_results(all_tracked_bboxs)
 
@@ -250,7 +250,7 @@ def main_loop(path_det):
     all_tracked_bboxs = get_all_tracked_bboxs(df_det_s)
 
     frames = generate_frames(all_tracked_bboxs)
-    save_video(frames, 'output.avi', fps=30, frame_size=(1920, 1080))
+    save_video(frames, 'output_tp2.avi', fps=30, frame_size=(1920, 1080))
 
     save_tracking_results(all_tracked_bboxs)
 
