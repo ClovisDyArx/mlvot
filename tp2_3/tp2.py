@@ -22,7 +22,7 @@ class bcolors:
 
 
 def load_data(path, sep=","):
-    return pd.read_csv(path, sep=sep, names= ['frame', 'id', 'bb_left', 'bb_top', 'bb_width', 'bb_height', 'conf', 'x', 'y', 'z'])
+    return pd.read_csv(path, sep=sep, names=['frame', 'id', 'bb_left', 'bb_top', 'bb_width', 'bb_height', 'conf', 'x', 'y', 'z'])
 
 
 def check_data(df):

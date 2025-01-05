@@ -157,7 +157,6 @@ class Tracker:
 
 
 def main():
-    # Load detection data
     path_det = "files/det/Yolov5s/det.txt"
     df_det_s = load_data(path_det, sep=" ")
 
@@ -180,12 +179,11 @@ def main():
 
         all_tracked_bboxs.append(frame_results)
 
-    # Generate and save video
     frames_with_tracks = generate_frames(all_tracked_bboxs)
     save_video(frames_with_tracks, "output_tp3.avi", fps=30, frame_size=(1920, 1080))
 
-    # Save tracking results
     save_tracking_results(all_tracked_bboxs)
+
 
 if __name__ == "__main__":
     main()
